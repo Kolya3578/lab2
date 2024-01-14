@@ -1,69 +1,137 @@
 <!DOCTYPE html>
    <html>
       <head>
-         <meta charset="Utf-8">
+         <meta charset="utf-8">
          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-         <title>Гостьова Head First</title>
-         <link type="text/css" rel="stylesheet" href="css/style.css"/>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Starbuzz Coffee</title>
+         <link type="text/css" rel="stylesheet" href="css/starbuzz.css"/>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
       </head>
-   <body>
-      <header>
-         <nav>
-            <ul class="navv">
-               <li>Головна</li>
-               <li>Контакти</li>
-               <li>Про нас</li>
-               <li>Телефон</li>
-            </ul>
-         </nav>
-      </header>
-         <h1>Наші напої</h1>
-            <h2>Прохолодний зелений чай</h2>
-         <p class="greentea">
-            <img src="../img/green.jpg" alt="Зелений чай"><br>
-            Цей напій містить величезну кількість вітамінів і
-            мінерали і корисний для здоров'я через
-            Склад: Зелений чай, ромашки квіти та корінь імбиру.
-         </p>
-         <h2>Охолоджений малиновий сироп</h2>
-         <p class="raspberry">
-            <img src="../img/lightblue.jpg" alt="Lightblue"><br>
-            Поєднання малинового соку та лимонного сорго, цедра
-            цитрусові та плоди ляпаса, це м'яке
-            Напій оновлюватиме та уточнить вашу думку.
-         </p>
-         <h2>Чудовий напій з чорниці</h2>
-         <p class="blueberry">
-            <img src="../img/blue.jpg" alt="Blue"><br>
-            Екстракти чорниці та вишні додаються до трав'яного чаю
-            З бузини вони негайно приведуть вас до стану миру
-            І блаженство.
-         </p>
-         <h2>Вибух з журавлинної антиоксиди</h2>
-         <p>
-            <img src="../img/red.jpg" alt="Red"><br>
-            Відрегулювати енергію насиченого вітаміну напоєм
-            Зі смаком журавлини та гібік.
-         </p>
-         <p>
-            <a href="../lounge.html">Назад до гостьової</a>
-         </p>
-         <form action="" method="post">
-            <label for="user_name">Enter your name</label><br>
-            <input type="text" placeholder="Enter something" value="something" maxlength="80" id="user_name"><br><br>
-            <label for="user_password">Password</label><br>
-            <input type="password" placeholder="Enter password" id="user_password"><br><br>
-            <label for="user_email">Enter your e-mail</label><br>
-            <input type="email" id="user_email"><br><br>
-            <input type="color"><br><br>
-            <input type="date"><br><br>
-            <input type="time"><br><br>
-            <input type="checkbox"><br><br>
-            <input type="radio" name="state">
-            <input type="radio" name="state"><br><br>
-            <input type="button" value="">
-            <input type="submit" value="Send">
-            <input type="reset" value="Clean">
-         <footer class="footer">2023</footer>
+         <div id="allcontent">
+            <header>
+            <div class="top">
+               <img id="headerLogo" src="images/header.gif" alt="Starbuzz Coffee logo image">
+            </div>
+            <nav>
+               <ul>
+                  <li><a class="nav-item" href="">Домашній</a></li>
+                  <li><a class="nav-item" href="">Блог</a></li>
+                  <li><a class="nav-item" href="">Винаходи</a></li>
+                  <li><a class="nav-item" href="">Рецепти</a></li>
+                  <li><a class="nav-item" href="">Адреса</a></li>
+               </ul>
+            </nav>
+            <div id="award">
+               <img src="images/award.gif" alt="Нагорода за жаровування кавових зерен року">
+            </div>
+            </header>
+      <div id="tableContainer">
+         <div id="tableRow">
+            <section id="drinks">
+               <h1>Напої</h1>
+               <p>Домашня суміш, $1.49</p>
+               <p>Кофе моко, $2.35</p>
+               <p>Капучино, $1.89</p>
+               <p>Чай, $1.85</p>
+               <h1>Освіжаючі напої</h1>
+               <p>
+                  Ми з гордістю подаємо освіжаючі напої,
+                  які готують наших друзів у гостьової Head First.
+               </p>
+               <p>Охолоджений зелений чай, $2.99</p>
+               <p>Охолоджений малиновий сироп, $2.99</p>
+               <p>Чудовий напій з чорниці, $2.99</p>
+               <p>Вибух з журавлинним антиоксидантним вибухом, $2.99</p>
+               <p>Чай "лід", $2.99</p>
+               <p>«Викладання мозку», $2.99</p>
+            </section>
+            <section id="main">
+               <h1>Високоякісна кава, якісний кофеїн</h1>
+               <p>
+                  В кафе Starbuzz ми робимо для того, щоб задовольнити вашу потребу в кофеїні
+                  через високоякісну каву та чай. Звичайно, ми хотіли б, щоб ви завжди
+                  замовили найбільшу чашку кави і отримали максимальну зарядку енергійності, але ми
+                  єдина компанія, яка активно контролює та оптимізує рівень
+                  кофеїну у ваших напоях. Отже, зупиніться та замовляйте каву за допомогою нової форми.
+                  Ви отримаєте високу якість каву Starbuzz, вміст кофеїну, в якому відповідає
+                  потреби вашого тіла.
+               </p>
+               <p>
+                  Ми згадували про <em>кофеїн</em>? Нещодавно ми почали фінансувати хлопців, які
+                  провести дивовижні дослідження на сайті <a href="http://buzz.wickedlysmart.com"
+                     title="Все Найцікавіше в кофеїні">Все про кофеїн</a>.
+                  Якщо ви хочете знати останні новини про каву та інші продукти, що містять кофеїн,
+                  Перейдіть на цей сайт.
+               </p>
+               <h1>Наша історія</h1>
+               <p>
+                  «Людина, план, кавове зерно ". Гаразд, Паліндром не вийшов, але виявилося
+                  гарна чашка кави. Генеральний директор Starbuzz — та сама людина
+                  і ви вже знаєте, який його план: Starbuzz На кожному куті.
+               </p>
+               <p>
+                  Всього через кілька років він досяг своєї мети, і сьогодні ви можете насолоджуватися
+                  напої Starbuzz у будь-якому місці. І звичайно, головна новина цього року - це -
+                  працівники Starbuzz вони об'єдналися з читачами Head First створити веб-спільноту
+                  Starbuzz, що зростає дуже швидко і допомагає задовольнити потребу в кофеїні
+                  абсолютно нова група клієнтів.
+               </p>
+               <h1>Напої кафе Starbuzz</h1>
+               <p>
+                  Кафе Starbuzz пропонує великий вибір напоїв, що містять кофеїн, включаючи наші:
+                  <a href="beverages.html#house" title="Домашня суміш">Домашня суміш</a>,
+                  <a href="beverages.html#mocco" title="Кофе моко">кофе моко</a>,
+                  <a href="beverages.html#cappuccino" title="Капучино">капучино</a>
+                  і улюблений нашими клієнтами
+                  <a href="beverages.html#chai" title="Чай">чай</a>.
+               </p>
+               <p>
+                  Ми також пропонуємо вам багато різновидів кави в зернах та меленій каві,
+                  що ви можете взяти з собою. Сьогодні ви також можете замовити каву для себе,
+                  використав спеціальну форму <a href="form.html" title="The Bean Machine">
+                     Bean Machine</a>, і насолоджуйтесь напоями кафе Starbuzz прямо вдома.
+               </p>
+            </section>
+            <aside>
+               <p class="beanheading">
+                  <img src="images/bag.jpg" alt="Пакетик Bean Machine" />
+                  <br />
+                  Онлайн-замовлення через
+                  <a href="form.html">BEAN MACHINE</a>
+                  <br />
+                  <span class="slogan">
+                     Швидкий <br />
+                     Свіжоприготовлений <br />
+                     Прямо до вашого будинку <br />
+                  </span>
+               </p>
+               <p>
+                  Чого ви чекаєте? Ви можете замовити будь-яку різноманітність кави через інтернет за допомогою нашого
+                  нової автоматичної форми Bean Machine. Як це працює? Просто натисніть на посилання
+                  Bean Machine, Опублікуйте замовлення, і ваша кава буде смажена, шліфувальна (якщо ви
+                  хочете), упаковано і доставляється до ваших дверей.
+               </p>
+            </aside>
+         </div> <!-- tableRow -->
+      </div> <!-- tableContainer -->
+         <div id="coupon">
+            <a href="freecoffee.html" title="Клацніть тут, щоб отримати безкоштовну каву">
+               <img src="images/ticket.gif" alt="Безкоштовний купон на каву Starbuzz"/>
+            </a>
+         </div>
+         <footer>
+            &copy; 2023, Кафе Starbuzz
+            <br />
+            Усі бренди, які з’являються на цьому сайті,
+            є власністю їх власників
+         </footer>
+      </div> <!-- allcontent -->
    </body>
 </html>
