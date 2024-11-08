@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       <div>
         <h1>React</h1>
         <h2>Score:</h2>
