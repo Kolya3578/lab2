@@ -11,7 +11,7 @@ function App() {
     setCount(count - 1);
   };
   return (
-    <div className="app">
+    <div className="App">
       <div>
         <h1>React</h1>
         <h2>Score:</h2>
